@@ -1,0 +1,97 @@
+
+
+.footer-contact {
+    padding: 100px 15% 200px 15%;
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 30px;
+    position: relative;
+}
+
+.contact-question h1 {
+    color: var(--color-title);
+    font-size: 48px;
+    font-family: 'Spectral', serif;
+}
+
+.contact-question p {
+    color: var(--color-text);
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: #000;
+    margin-top: 20px;
+}
+
+.contact-form textarea,
+.contact-form input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: #f3f3f3;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form Button {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form textarea {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.footer-contact img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
+.footer-bottom {
+    margin-top: 28px;
+    padding: 50px 15% 100px 15%;
+    background-color: #162224;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--white);
+}
+
+.footer-bottom i {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-bottom h1 {
+    text-align: center;
+    font-family: 'Spectral', serif;
+}
+
+.footer-bottom a {
+    text-align: end;
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer-contact {
+        display: block;
+        padding: 100px 10% 150px 10%;
+    }
+    .footer-bottom {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+}

@@ -1,0 +1,131 @@
+
+.cart {
+    margin: 150px 15% 0 15%;
+}
+
+/* .cart h3 {
+    text-align: center;
+    color: var(--color-title);
+    font-size: 24px;
+    font-family: 'Spectral', serif;
+} */
+
+.cart-receipt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+ 
+
+.cart-total {
+    padding: 10px 0px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+}
+
+
+.cart-payment-methods,
+.cart-shipment-details {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #F9FAFA;
+}
+
+.cart-payment-methods h3,
+.cart-shipment-details h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cart-shipment-details input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+}
+
+.cart-shipment-details p {
+    font-weight: 600;
+}
+
+.cart-payment-item {
+    margin: 10px 0;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.cart-payment-item input {
+    cursor: pointer;
+}
+
+.cart-payment-item i,
+.cart-payment-item ion-icon{
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+
+.cart-item {
+    margin: 10px 0;
+    background-color: #F9FAFA;
+    padding: 5px;
+}
+
+.cart-item-imformation {
+    display: grid;
+    grid-template-columns: 5fr 5fr 2fr;
+    gap: 20px;
+}
+
+.cart-item-imformation h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.cart-item-imformation p {
+    color: var(--color-title);
+}
+
+.cart-item-imformation img {
+    width: 100%;
+}
+
+.cart-item-control {
+    display: flex;
+}
+
+.cart-item-control-input,
+.cart-item-control-button {
+    padding: 0 7px;
+    border: 1px solid #000;
+}
+
+.cart-item-control-button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cart-item-control-input {
+    padding: 0 20px;
+}
+
+.remove-item {
+    font-size: 22px;
+    cursor: pointer;
+    color: #000;
+    text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+    .cart {
+        margin: 150px 10% 0 10%;
+    }
+    
+    .cart-receipt {
+        display: block;
+    }
+}

@@ -1,0 +1,101 @@
+
+.products {
+    margin: 100px 15%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #F9FAFA;
+    padding: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #ebebeb;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card:hover>.card-img>img {
+    transition: all .3s ease-in-out;
+    transform: scale(.9);
+}
+
+.card h3 {
+    font-size: 16px;
+    color: var(--color-title);
+    font-weight: normal;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.product-btn {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, .2);
+    text-align: center;
+    opacity: 0;
+}
+.card:hover>.product-btn {
+    top: 0;
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+.product-btn ion-icon,
+.product-btn-detail {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 6px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.product-btn ion-icon:hover,
+.product-btn-detail:hover {
+    background-color: #000;
+}
+
+.product-btn ion-icon {
+    padding: 5px 37px;
+    margin: 20px;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .products {
+        margin: 100px 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .products {
+        margin: 100px 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}

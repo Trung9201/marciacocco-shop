@@ -1,0 +1,16 @@
+
+.icon img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.icon img:hover {
+    filter:brightness(90%);
+}
+
+.icon h3 {
+    color: var(--color-title);
+    font-family: 'Spectral', serif;
+    font-size: 24px;
+    text-align: center;
+}

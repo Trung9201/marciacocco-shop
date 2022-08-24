@@ -1,0 +1,131 @@
+.about-information {
+    margin: 100px 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.about-information img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.about-information-content {
+    margin: auto;
+}
+
+.about-information-content h1{
+    font-size: 48px;
+    color: var(--color-title);
+    font-family: 'Spectral', serif;
+}
+
+.about-information-content p {
+    color: #565656;
+    font-size: 16px;
+    margin: 20px 0 40px 0;
+}
+
+.about-watching,
+.about-partners {
+    background-color: #F9FAFA;
+    padding: 100px 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-yt h1,
+.partners-content h1{
+    font-size: 48px;
+    color: var(--color-title);
+    font-family: 'Spectral', serif;
+}
+
+.about-yt p,
+.partners-content p {
+    color: #565656;
+    font-size: 16px;
+    margin: 20px 0 40px 0;
+    max-width: 350px;
+}
+
+.partners-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.partners-logo img {
+    width: 100%;
+}
+
+.about-watching iframe {
+    width: 90%;
+    height: 100%;
+}
+
+.about-watching {
+    background-color: #fff;
+}
+
+.about-search {
+    padding: 100px 15%;
+    background-color: #F9FAFA;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.about-question {
+    margin: auto;
+}
+
+.about-question h1 {
+    color: var(--color-title);
+    font-size: 48px;
+    font-family: 'Spectral', serif;
+}
+
+.about-question p {
+    color: var(--color-text);
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.about-answers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .about-information {
+        display: block;
+        margin: 100px 10%;
+    }
+    
+    .about-information img {
+        width: 100%;
+    }
+
+    .about-watching,
+    .about-partners {
+        padding: 100px 10%;
+        display: block;
+    }
+    .about-watching iframe {
+        width: 100%;
+    }
+
+    .about-search {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .about-answers  {
+        display: block;
+    }
+}
