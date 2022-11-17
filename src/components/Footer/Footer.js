@@ -13,16 +13,16 @@ const Footer = () => {
             talk.
           </p>
         </div>
-        <div className="contact-form">
+        <form className="contact-form">
           <p>Name</p>
-          <input type="text" placeholder="Your name" />
+          <input type="text" placeholder="Your name" required />
           <p>Your email*</p>
-          <input type="text" placeholder="Your email address" />
+          <input type="text" placeholder="Your email address" required />
           <p>Message*</p>
-          <textarea type="text" placeholder="Enter your message" />
+          <textarea type="text" placeholder="Enter your message" required />
           <Button>Submit</Button>
-        </div>
-        <img src="/images/cloud-dark.png" alt="loud-dark" />
+        </form>
+        <img src="/images/cloud-dark.png" alt="loud-dark" required />
       </div>
 
       <div className="footer-bottom">

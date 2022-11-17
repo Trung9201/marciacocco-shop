@@ -4,6 +4,10 @@ import CartContext from "../context/cart/CartContext";
 import Button from "../components/Button/Button";
 
 const Cart = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const { removeItem, cartItems } = useContext(CartContext);
   const [quanity, setQuanity] = useState(1);
   const updateQuantity = (type) => {

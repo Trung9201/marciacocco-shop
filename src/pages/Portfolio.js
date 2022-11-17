@@ -3,6 +3,9 @@ import Banner from "../components/Banner/Banner";
 import "../css/Portfolio.css";
 
 const Portfolio = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="portfolio">
       <Banner src="/images/banner-3.png" alt="banner-home" title="Portfolio" />

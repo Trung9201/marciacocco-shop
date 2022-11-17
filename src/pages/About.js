@@ -5,6 +5,9 @@ import Icon from "../components/Icon/Icon";
 import "../css/About.css";
 
 const About = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="about">
       <Banner src="/images/banner-2.png" alt="banner-about" title="About" />

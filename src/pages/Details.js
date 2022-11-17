@@ -5,7 +5,9 @@ import { data as product } from "../components/Data/Data";
 
 const Details = () => {
   const { addToCart } = useContext(CartContext);
-
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       {product.map((item) => (

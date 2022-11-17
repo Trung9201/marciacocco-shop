@@ -5,6 +5,9 @@ import Icon from "../components/Icon/Icon";
 import "../css/Home.css";
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="home">
       <Banner
