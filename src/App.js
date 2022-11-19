@@ -7,6 +7,7 @@ import Cart from "./pages/Cart";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Store from "./pages/Store";
+import Faq from "./pages/Faq";
 import Footer from "./components/Footer/Footer";
 import Details from "./pages/Details";
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/store" element={<Store />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="/product/:id" element={<Details />} />
         </Routes>
         <Footer />
