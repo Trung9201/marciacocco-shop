@@ -27,10 +27,10 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div>
-          <i class="fa-brands fa-youtube"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-behance"></i>
+          <i className="fa-brands fa-youtube"></i>
+          <i className="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-facebook"></i>
+          <i className="fa-brands fa-behance"></i>
         </div>
         <h1>Marcia Coco</h1>
         <a href="https://www.facebook.com/trunghips.0902/">
