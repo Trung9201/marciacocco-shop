@@ -22,7 +22,7 @@ const Footer = () => {
           <textarea type="text" placeholder="Enter your message" required />
           <Button>Submit</Button>
         </form>
-        <img src="/images/cloud-dark.png" alt="loud-dark" required />
+        <img src="./images/cloud-dark.png" alt="loud-dark" required />
       </div>
 
       <div className="footer-bottom">
