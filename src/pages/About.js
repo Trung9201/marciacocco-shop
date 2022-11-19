@@ -57,9 +57,7 @@ const About = () => {
           height="530"
           src="https://www.youtube.com/embed/hIpCzcKafHY"
           title="Cómo diseñé mi Marca Personal"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
         ></iframe>
         <div className="about-yt">
           <h1> My Youtube channel</h1>

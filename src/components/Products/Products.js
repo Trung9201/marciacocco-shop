@@ -9,7 +9,7 @@ const Products = () => {
 
   return (
     <div className="products">
-      {data.map((product, index) => (
+      {data.map((product, index, key) => (
         <div className="card" key={index}>
           <div className="card-img">
             <img src={product.image} alt={product.name} />

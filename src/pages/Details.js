@@ -17,7 +17,7 @@ const Details = () => {
       <div className="detail-product" key={product[idProduct]._id}>
         <img src={product[idProduct].image} alt="" />
         <div className="info">
-          <h3>Name product: {product[idProduct].name}</h3>
+          <h3> {product[idProduct].name}</h3>
           <span>Price: ${product[idProduct].price}</span>
           <p className="details">Details: {product[idProduct].detail}</p>
           <Link
