@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState,  } from "react";
 import "../css/Cart.css";
 import CartContext from "../context/cart/CartContext";
 import Button from "../components/Button/Button";
@@ -9,18 +9,28 @@ const Cart = () => {
   }, []);
 
   const { removeItem, cartItems } = useContext(CartContext);
-  const [quanity, setQuanity] = useState(1);
-  const updateQuantity = (type) => {
-    if (type === "plus") {
-      setQuanity(quanity + 1);
-    } else {
-      setQuanity(quanity - 1 < 1 ? 1 : quanity - 1);
-    }
+  const [cart, setCart] = useState(cartItems)
+
+  // const [amount, setamount] = useState(1);
+  const updateAmount = (item, d) => {
+    console.log(item,d);
+    let ind = -1;
+    cart.forEach((data, index) => {
+      if(data.id === item.id) 
+        ind = index
+    })
+
+    const tempArr = cartItems;
+    tempArr[ind].amount += d;
+    if(tempArr[ind].amount <= 0)
+      tempArr[ind].amount = 0
+  
+    setCart([...tempArr])
   };
 
   return (
     <div className="cart">
-      {cartItems.length === 0 ? (
+      {cart.length === 0 ? (
         <h3>Cart is Empty</h3>
       ) : (
         <form action="" className="cart-receipt">
@@ -72,8 +82,8 @@ const Cart = () => {
           </div>
 
           <div className="cart-list">
-            {cartItems.map((item, key) => (
-              <div className="cart-item">
+            {cart.map((item, key) => (
+              <div className="cart-item" key={key}>
                 <div className="cart-item-imformation">
                   <img src={item.image} alt={item.name} />
                   <div>
@@ -82,14 +92,14 @@ const Cart = () => {
                     <div className="cart-item-control">
                       <div
                         className="cart-item-control-button"
-                        onClick={() => updateQuantity("minus")}
+                         onClick={() => updateAmount(item, -1)}
                       >
                         -
                       </div>
-                      <div className="cart-item-control-input">{quanity}</div>
+                      <div className="cart-item-control-input">{item.amount}</div>
                       <div
                         className="cart-item-control-button"
-                        onClick={() => updateQuantity("plus")}
+                        onClick={() => updateAmount(item, +1)}
                       >
                         +
                       </div>
@@ -109,7 +119,7 @@ const Cart = () => {
               <h3>Total: </h3>
               <h3>
                 {cartItems.reduce(
-                  (amount, item) => item.price * quanity + amount,
+                  (amount, item) => item.price * item.amount + amount,
                   0
                 )}
                 $

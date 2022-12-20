@@ -6,7 +6,7 @@ export const data = [
     detail:
       "Printable ilustración: Vuelo de Hojas.Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa.",
     image: "../images/img-9.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "2",
@@ -15,7 +15,7 @@ export const data = [
     detail:
       "Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa. Este dibujo lo hice con mucho amor, inspirado en mi madre que es una gran amante de las plantas.Lo importante que es aprender a cuidar algo.",
     image: "../images/img-10.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "3",
@@ -24,7 +24,7 @@ export const data = [
     detail:
       "Printable ilustración: mariposas de colores. Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa. Espero que estas tres amigas puedan darle color a tu espacio.",
     image: "../images/img-11.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "4",
@@ -33,7 +33,7 @@ export const data = [
     detail:
       "Printable ilustración infantil. Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa. Siempre es un buen día para salir a explorar.",
     image: "../images/img-12.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "5",
@@ -42,7 +42,7 @@ export const data = [
     detail:
       "Printable ilustración: Vuelo de Hojas.Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa.",
     image: "../images/img-14.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "6",
@@ -51,7 +51,7 @@ export const data = [
     detail:
       "Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa. Este dibujo lo hice con mucho amor, inspirado en mi madre que es una gran amante de las plantas. Lo importante que es aprender a cuidar algo.",
     image: "../images/img-13.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "7",
@@ -60,7 +60,7 @@ export const data = [
     detail:
       "Printable ilustración: Vuelo de Hojas.Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa.",
     image: "../images/img-14.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "8",
@@ -69,7 +69,7 @@ export const data = [
     detail:
       "Printable ilustración: mariposas de colores. Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa. Espero que estas tres amigas puedan darle color a tu espacio.",
     image: "../images/img-15.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "9",
@@ -78,7 +78,7 @@ export const data = [
     detail:
       "Printable ilustración infantil. Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa. Siempre es un buen día para salir a explorar.",
     image: "../images/img-16.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "10",
@@ -87,7 +87,7 @@ export const data = [
     detail:
       "Printable ilustración: Vuelo de Hojas.Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa.",
     image: "../images/img-17.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "11",
@@ -96,7 +96,7 @@ export const data = [
     detail:
       "Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa. Este dibujo lo hice con mucho amor, inspirado en mi madre que es una gran amante de las plantas. Lo importante que es aprender a cuidar algo.",
     image: "../images/img-18.png",
-    quanity: 0,
+    amount: 1,
   },
   {
     id: "12",
@@ -105,6 +105,6 @@ export const data = [
     detail:
       "Printable ilustración: Vuelo de Hojas.Archivo tamaño carta descargable para que puedas imprimirlo y colgarlo en tu casa.",
     image: "../images/img-9.png",
-    quanity: 0,
+    amount: 1,
   },
 ];
